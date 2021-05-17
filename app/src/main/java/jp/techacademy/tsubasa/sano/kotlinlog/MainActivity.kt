@@ -25,6 +25,28 @@ class MainActivity : AppCompatActivity() {
         dog.say()
         dog.move()
 
+        //Stringクラス
+        val str1= "Hello"
+        val str2= "World"
+        val str3= "Hello"
+
+        //文字列の長さ(文字数)
+        val length = str3.length
+        Log.d("kotlintest", length.toString())
+
+        //文字列の比較について
+        if (str1.equals(str2)) {
+            Log.d("kotlintest","str1とstr2は一緒です")
+        }else {
+            Log.d("kotlintest","str1とstr2は異なります")
+        }
+
+        if (str1.equals(str3)) {
+            Log.d("kotlintest","str1とstr3は一緒です")
+        }else {
+            Log.d("kotlintest","str1とstr3は異なります")
+        }
+
     }
 
 }
